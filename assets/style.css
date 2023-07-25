@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: 4rem 10%;
+}
+
 :root {
     --orange: rgb(255, 68, 0);
     --white: #fff;
@@ -39,9 +43,13 @@ a {
     align-items: center;
 }
 
-.header ion-icon{
+.header ion-icon {
     font-size: 6rem;
     color: var(--white);
+}
+
+.header ion-icon:hover {
+    color: var(--orange);
 }
 
 .header-div h2 {
@@ -60,9 +68,9 @@ a {
 }
 
 .header .navbar a {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: var(--white);
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 .header .navbar a:hover {
@@ -93,7 +101,6 @@ a {
     font-size: 5rem;
     font-style: italic;
     margin-right: auto;
-    margin-left: 15rem;
 }
 
 .main h1:hover {
@@ -102,7 +109,7 @@ a {
 
 .main button {
     margin-right: auto;
-    margin-left: 28rem;
+    margin-left: 12rem;
     margin-top: 5rem;
     color: var(--white);
     font-weight: 500;
@@ -113,6 +120,47 @@ a {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.main button:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: var(--white);
+}
+
+.box-jr {
+    border-bottom: 0.2rem solid var(--orange);
+    width: 25rem;
+    margin-bottom: 5rem;
+}
+
+.section-heading {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.about .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 5rem;
+}
+
+.about .box-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .box-container .box p {
+    font-size: 2.0rem;
+}
+
+.about .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 @media (max-width: 1200px) {
     .header {
@@ -148,6 +196,18 @@ a {
     }
 
     .main button {
-        margin-left: 15rem;
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .main button {
+        margin-left: 9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .main button {
+        margin-left: 6rem;
     }
 }
