@@ -140,6 +140,11 @@ section {
     font-style: italic;
 }
 
+.about {
+    margin-bottom: 25rem;
+    margin-top: 10rem;
+}
+
 .about .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -154,12 +159,85 @@ section {
 
 .about .box-container .box p {
     font-size: 2.0rem;
+    line-height: 2.5rem;
 }
 
 .about .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+}
+
+.team .box-container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team .box-container .box {
+    text-align: center;
+    border: 0.2rem solid black;
+    width: 35rem;
+    margin: 1.5rem;
+}
+
+.box-jr-2 {
+    display: flex;
+    justify-content: center;
+    border: 0.3rem solid var(--orange);
+    width: 100%;
+    margin-top: -8.5rem;
+    margin-bottom: 5rem;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-radius: 16px;
+    position: sticky;
+}
+
+.box-jr-2 h2 {
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.team .box-container .box .image {
+    height: 45rem;
+    overflow: hidden;
+}
+
+.team .box-container .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .box-container .box .astronaut-info h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.team .box-container .box .astronaut-info h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.team .box-container .box .astronaut-info p {
+    color: rgb(88, 88, 88);
+    font-size: 1.5rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 @media (max-width: 1200px) {
