@@ -123,6 +123,7 @@ section {
     border: 1px solid var(--white);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
+    transform: skew(-14deg);
 }
 
 .main button:hover {
@@ -187,6 +188,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10rem;
 }
 
 .team .box-container .box {
@@ -216,6 +218,10 @@ section {
     font-size: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.box-jr-2 h2:hover {
+    color: var(--orange);
 }
 
 .team .box-container .box .image {
@@ -251,6 +257,94 @@ section {
     padding: 0rem 2rem 2rem 2rem;
 }
 
+.trips {
+    height: 80vh;
+    background: url('/interplanetary-expeditions/assets/images/stars-image.jpg');
+    /* background-size: cover;
+    background-position: fixed; */
+}
+
+.box-jr-3 {
+    display: flex;
+    justify-content: center;
+    border: 0.3rem solid rgb(30, 30, 255);
+    width: 100%;
+    margin-top: -8.5rem;
+    margin-bottom: 5rem;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-radius: 16px;
+    position: sticky;
+    transform: skew(-20deg);
+}
+
+.box-jr-3 h2 {
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.box-jr-3 h2:hover {
+    color: rgb(30, 30, 255);
+}
+
+.trips .box-container .box {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.3rem solid white;
+    border-radius: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.trips .box-container .box:hover {
+    background-color: black;
+}
+
+.left-section {
+    text-align: center;
+    margin: 2rem 0rem 2rem 3rem;
+}
+
+.left-section h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.left-section p {
+    font-size: 3rem;
+}
+
+.middle-section h3 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center ;
+}
+
+.middle-section h3 span {
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.right-section button {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    border-radius: 16rem;
+    font-weight: 600;
+}
+
+.right-section button:hover {
+    background-color: black;
+    color: white;
+}
+
+.right-section {
+    margin: 2rem 3rem 2rem 0rem;
+}
+
 @media (max-width: 1200px) {
     .header {
         padding: 2rem;
@@ -273,6 +367,19 @@ section {
     .navbar ion-icon {
         display: block;
     }
+
+    .trips .box-container .box {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right-section {
+        margin-left: 5rem;
+    }
+
+    .trips {
+        height: 160vh;
+    }
 }
 
 @media (max-width: 450px) {
@@ -287,6 +394,10 @@ section {
     .main button {
         margin-left: 12rem;
     }
+
+    .right-section {
+        margin-left: 4rem;
+    }
 }
 
 @media (max-width: 390px) {
@@ -298,5 +409,9 @@ section {
 @media (max-width: 350px) {
     .main button {
         margin-left: 6rem;
+    }
+
+    .trips {
+        height: 200vh;
     }
 }
