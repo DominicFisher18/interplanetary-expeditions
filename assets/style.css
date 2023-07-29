@@ -211,6 +211,7 @@ section {
     border-radius: 16px;
     position: sticky;
     transform: skew(-20deg);
+    margin-right: 80%;
 }
 
 .box-jr-2 h2 {
@@ -218,6 +219,7 @@ section {
     font-size: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-left: 30%;
 }
 
 .box-jr-2 h2:hover {
@@ -404,6 +406,10 @@ section {
     .main button {
         margin-left: 9rem;
     }
+
+    .box-jr-2 h2 {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 350px) {
@@ -414,4 +420,6 @@ section {
     .trips {
         height: 200vh;
     }
+
+    
 }
