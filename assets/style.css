@@ -346,6 +346,11 @@ section {
     margin: 2rem 3rem 2rem 0rem;
 }
 
+.pricing {
+    border-bottom: 0.2rem solid black;
+    background-color: rgb(238, 238, 238);
+}
+
 .pricing-header {
     display: flex;
     flex-direction: column;
@@ -408,10 +413,9 @@ section {
 
 .pricing .box-container .box {
     text-align: center;
-    /* border: 0.2rem solid black; */
     width: 35rem;
     margin: 1.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     position: relative;
     text-align: center;
 }
@@ -438,9 +442,10 @@ section {
 .add-on-label div {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
-    margin-bottom: 2rem;
+    
+    margin-bottom: 2.5rem;
     font-size: 1.8rem;
+    align-items: center;
 }
 
 .add-on-label div input {
@@ -448,8 +453,7 @@ section {
 }
 
 .add-on-label div p {
-    margin-left: 1.5rem;
-    /* font-size: 1.5rem; */
+    margin-left: 2.5rem;
 }
 
 .purchase-button {
@@ -465,6 +469,111 @@ section {
 .purchase-button:hover {
     cursor: pointer;
     background-color: white;
+    color: black;
+}
+
+.box-jr-4 {
+    border-bottom: 0.2rem solid var(--orange);
+    width: 30rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-jr-4 h2 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.contact div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 5rem;
+}
+
+.contact .box-container .box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.contact .box-container .box-right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+}
+
+.contact .box-container .box h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-right: 8rem;
+    
+}
+
+.contact-paragraph {
+    margin-bottom: 5rem;
+}
+
+.contact .box-container .box div {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.contact .box-container .box div ion-icon {
+    font-size: 2.5rem;
+}
+
+.contact .box-container .box div p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+.contact .box-container .box-right input {
+    border: 0.1rem solid black;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    margin: 2rem 2rem 0rem 2rem;
+    border-radius: 2rem;
+}
+
+.contact .box-container .box-right textarea {
+    border: 0.1rem solid black;
+    padding: 1rem;
+    margin: 2rem 2rem 4rem 2rem;
+    border-radius: 2rem;
+}
+
+.contact .box-container .box-right button {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0rem 2rem 2rem 2rem;
+    background-color: black;
+    width: 20rem;
+    color: white;
+    align-self: center;
+    border-radius: 1.5rem;
+}
+
+.contact .box-container .box-right button:hover {
+    background-color: var(--orange);
     color: black;
 }
 
