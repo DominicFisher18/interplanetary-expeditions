@@ -462,6 +462,12 @@ section {
     margin-top: 3rem;
 }
 
+.purchase-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
 @media (max-width: 1200px) {
     .header {
         padding: 2rem;

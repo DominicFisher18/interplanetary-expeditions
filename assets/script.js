@@ -12,3 +12,4 @@ const homeButton = document.querySelector('.home-button')
 homeButton.addEventListener('click', () => {
     location.href = "#about"
 })
+
