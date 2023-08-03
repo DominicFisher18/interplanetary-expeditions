@@ -624,6 +624,10 @@ section {
     padding: 0.5rem;
 }
 
+.footer-div-2 p:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .header {
         padding: 2rem;
@@ -635,6 +639,10 @@ section {
 
     html {
         font-size: 60%;
+    }
+
+    .trips {
+        height: 100vh;
     }
 }
 
