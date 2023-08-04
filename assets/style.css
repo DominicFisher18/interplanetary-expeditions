@@ -36,6 +36,7 @@ section {
     padding: 2rem 6%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color:rgba(0, 0, 0, 0.5);
 }
 
@@ -48,12 +49,21 @@ section {
     align-items: center;
 }
 
-.header ion-icon {
+.hamburger {
     font-size: 6rem;
     color: var(--white);
 }
 
-.header ion-icon:hover {
+.header-div ion-icon {
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.header-div ion-icon:hover {
+    color: var(--orange);
+}
+
+.hamburger:hover {
     color: var(--orange);
 }
 
@@ -82,7 +92,7 @@ section {
     color: var(--orange);
 }
 
-.navbar ion-icon {
+.hamburger {
     font-size: 5rem;
     display: none;
 }
@@ -647,13 +657,9 @@ section {
 }
 
 @media (max-width: 991px) {
-    .header .navbar a {
+    /* .header .navbar a {
         display: none;
-    }
-
-    .navbar ion-icon {
-        display: block;
-    }
+    } */
 
     .trips .box-container .box {
         flex-direction: column;
@@ -666,6 +672,40 @@ section {
 
     .trips {
         height: 160vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger.rotate {
+        transform: rotate(90deg);
+    }
+
+    .header .navbar {
+        position: fixed;
+        top: 10rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-90rem);
+    }
+
+    .header .navbar.activate {
+        transform: translateX(0);
+    }
+
+    .header .navbar a {
+        color: white;
+        font-size: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .hamburger {
+        display: block;
     }
 }
 
@@ -710,5 +750,7 @@ section {
         height: 200vh;
     }
 
-    
+    html {
+        font-size: 45%;
+    }
 }

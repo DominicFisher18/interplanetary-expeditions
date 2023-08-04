@@ -1,4 +1,18 @@
+const menuButton = document.querySelector('.hamburger-menu')
+const navBar = document.querySelector('.header .navbar')
+
+menuButton.addEventListener('click', () => {
+    menuButton.classList.toggle('rotate')
+    navBar.classList.toggle('activate')
+    event.preventDefault()
+})
+
+
+
+
 document.onscroll = () => {
+    navBar.classList.remove('activate')
+    menuButton.classList.remove('rotate')
     if (window.scrollY > 0) {
         document.querySelector('.header')
             .classList.add('onscroll')
