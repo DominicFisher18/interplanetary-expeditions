@@ -306,7 +306,8 @@ section {
 }
 
 .trips .box-container .box {
-    color: white;
+    color: black;
+    background-color: rgb(236, 236, 236);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -316,9 +317,10 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.trips .box-container .box:hover {
+/* .trips .box-container .box:hover {
     background-color: black;
-}
+    color: white;
+} */
 
 .left-section {
     text-align: center;
@@ -334,10 +336,16 @@ section {
     font-size: 3rem;
 }
 
+.middle-section {
+    border-left: 0.2rem solid black;
+    border-right: 0.2rem solid black;
+}
+
 .middle-section h3 {
     font-size: 2.5rem;
     line-height: 4rem;
-    text-align: center ;
+    text-align: center;
+    padding: 0rem 5rem;
 }
 
 .middle-section h3 span {
@@ -350,6 +358,8 @@ section {
     padding: 1rem 2rem;
     border-radius: 16rem;
     font-weight: 600;
+    color:white;
+    background-color: black;
 }
 
 .right-section button:hover {
@@ -656,6 +666,10 @@ section {
     .trips {
         height: 100vh;
     }
+
+    .middle-section h3 {
+        padding: 0rem 1rem
+    }
 }
 
 @media (max-width: 991px) {
@@ -674,6 +688,10 @@ section {
 
     .trips {
         height: 160vh;
+    }
+
+    .middle-section {
+        border: none
     }
 }
 
