@@ -483,9 +483,11 @@ section {
     margin-top: 3rem;
 }
 
-.purchase-button:hover {
+.purchase-button:hover,
+.purchase-button-2:hover,
+.purchase-button-3:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(238, 238, 238);
     color: black;
 }
 
@@ -747,7 +749,7 @@ section {
     }
 
     .trips {
-        height: 200vh;
+        height: 150vh;
     }
 
     html {
